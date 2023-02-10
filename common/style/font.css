@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/* Handel */
+@font-face {
+  font-family: "Handel";
+  src: url("../fonts/HandelGothic/AnyConv.com__Handel\ Gothic.woff2") format("woff2");
+  font-style: normal;
+}
+
+/* Mulish */
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Black.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-ExtraBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Bold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-ExtraLight.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* NanumSquare */
+@font-face {
+  font-family: "NanumSquare";
+  src: url("../fonts/NanumSquare/NanumSquareL.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquare";
+  src: url("../fonts/NanumSquare/NanumSquareR.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquare";
+  src: url("../fonts/NanumSquare/NanumSquareB.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquare";
+  src: url("../fonts/NanumSquare/NanumSquareEB.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* inter */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Black.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-ExtraBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}

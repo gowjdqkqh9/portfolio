@@ -1,0 +1,214 @@
+/********** header **********/
+.header .header_container .gnb .logo a {
+  background: url(../common/images/logo_black.png) no-repeat 50%/contain;
+}
+.header .header_container .gnb ul {
+  width: 10vw;
+}
+.header .header_container .gnb ul .color_mode_btn a {
+  background: url(../common/images/btn_colorMode.png) no-repeat 50%/contain;
+}
+.header .contact_btn {
+  width: 120px;
+  height: 120px;
+  bottom: 3vw;
+  right: 3vw;
+}
+.header .contact_btn a {
+  background: url(../common/images/goUp.png) no-repeat 50%/contain;
+}
+
+/********** menu - active **********/
+.active .header {
+  /********** menu_gnb **********/
+}
+.active .header .menu_gnb ul {
+  margin-top: 0;
+}
+.active .header .menu_gnb .main_menu {
+  font-size: 5em;
+}
+.active .header .menu_gnb .contact_menu .contact_git span {
+  background: url(../common/images/gitHub.png) no-repeat 50%/contain;
+}
+.active .header .menu_gnb .contact_menu .contact_notion span {
+  background: url(../common/images/notion.png) no-repeat 50%/contain;
+}
+
+/********** main **********/
+.main {
+  padding: 0 15vw;
+}
+.main .title {
+  margin: 100px 0 50px;
+  transition: 0.3s;
+}
+.main .title li {
+  display: flex;
+  align-items: flex-end;
+}
+.main .title li p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.main .title li h2 {
+  font-size: 3.86em;
+  line-height: 0.6;
+}
+.main .title li h2 .h3 {
+  font-size: 0.3em;
+  margin-left: 20px;
+}
+.main .title li h2 .mobile {
+  display: none;
+}
+.main .sub_txt p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/********** about **********/
+.about .aboutMe h2 {
+  font-size: 4em;
+}
+.about .aboutMe h2 .br {
+  display: none;
+}
+.about .aboutMe h3 {
+  font-size: 1.6em;
+}
+.about .aboutMe p {
+  width: 30vw;
+}
+.about .keywords {
+  margin: 70px 10vw 0;
+}
+.about .keywords .keywords_wrap {
+  font-size: 3.5em;
+}
+.about .keywords .keywords_wrap li ul li {
+  height: 84px;
+}
+.about .keywords .keywords_wrap li ul li .mobile_remove {
+  display: block;
+}
+.about .keywords .keywords_wrap li ul li .mobile_add {
+  display: none;
+}
+
+/********** projects **********/
+.projects .title_wrap {
+  height: 50%;
+}
+.projects .img_wrap {
+  height: 100%;
+  position: relative;
+}
+.projects .img_wrap .img_swp {
+  width: 100%;
+  margin-top: 0;
+  position: absolute;
+}
+.projects .img_wrap .img_swp .swiper {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper {
+  height: 90%;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide {
+  width: 50%;
+  height: 100%;
+  padding-top: 0;
+  padding-right: 0;
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(4, 1fr);
+  padding-left: 100px;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide a {
+  height: 22vw;
+  grid-row: 1/4;
+  margin-left: 0;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt {
+  width: 100%;
+  height: 100%;
+  grid-row: 4/5;
+  padding: 0;
+  align-items: start;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt h2 {
+  margin-top: 0;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .view {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt ul li {
+  padding: 10px 20px;
+  margin: 3px 6px 3px 0;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .ul_pc {
+  display: none;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .ul_tab {
+  display: block;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .ul_mobil {
+  display: none;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .slide1 {
+  padding-left: 0;
+}
+.projects .img_wrap .img_swp .swiper .swiper-button-next,
+.projects .img_wrap .img_swp .swiper .swiper-button-prev {
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 320px;
+}
+
+/********** skills **********/
+.skills ul li {
+  font-size: 2em;
+}
+.skills ul .skill_box .box_txt {
+  padding: 20px 0 20px 15vw;
+  margin: 0;
+}
+.skills ul .skill_box.on {
+  height: 108px;
+}
+
+/********** contact **********/
+.contact {
+  /********** footer **********/
+}
+.contact .contact_wrap {
+  display: flex;
+  flex-direction: row;
+}
+.contact .contact_wrap .git {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+}
+.contact .contact_wrap .git .git_logo {
+  background: url(../common/images/gitHub.png) no-repeat 50%/contain;
+}
+.contact .contact_wrap .notion .notion_logo {
+  background: url(../common/images/notion.png) no-repeat 50%/contain;
+}
+.contact .contact_wrap a .right {
+  background: url(../common/images/contact_right.svg) no-repeat 50%/contain;
+}
+.contact footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

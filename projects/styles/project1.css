@@ -1,0 +1,334 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "NanumSqauer";
+}
+
+/******** font ********/
+h3 {
+  font-family: "Mulish";
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+li {
+  line-height: 1.6;
+}
+
+/********** header **********/
+.header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+.header .header_container .gnb {
+  width: 100vw;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header .header_container .gnb .logo {
+  width: 33px;
+  height: 26px;
+}
+.header .header_container .gnb .logo a {
+  width: 100%;
+  height: 100%;
+  background: url(../../common/images/logo_black.png) no-repeat 50%/contain;
+  display: block;
+}
+.header .header_container .gnb .title {
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.header .header_container .gnb ul {
+  width: 15vw;
+  height: 26px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  transition: 0.3s;
+}
+.header .header_container .gnb ul .color_mode_btn {
+  min-width: 25px;
+  transition: 0.3s;
+}
+.header .header_container .gnb ul .color_mode_btn a {
+  width: 100%;
+  height: 100%;
+  background: url(../../common/images/btn_colorMode.png) no-repeat 50%/contain;
+  display: block;
+}
+.header .header_container .gnb ul .color_mode_btn:hover {
+  transform: rotate(180deg);
+}
+.header .header_container .gnb ul .menu_btn {
+  width: 26px;
+  transition: 0.3s;
+}
+.header .header_container .gnb ul .menu_btn a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header_container .gnb ul .menu_btn a span {
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.header .header_container .gnb ul .menu_btn:hover {
+  transform: rotate(90deg);
+}
+.header .header_container .gnb ul .menu_btn:hover a .short {
+  height: 60%;
+}
+.header .menu_gnb {
+  display: none;
+  width: 0;
+  height: 0;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.header .contact_btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5vw;
+  right: 5vw;
+  transition: 0.4s;
+}
+.header .contact_btn a {
+  width: 100%;
+  height: 100%;
+  background: url(../../common/images/goUp.png) no-repeat 50%/contain;
+  display: block;
+  animation: rotate_image 6s linear infinite;
+  transform-origin: 50% 50%;
+}
+.header .contact_btn:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/********** background **********/
+.project_bg {
+  z-index: -9999;
+  height: 100vh;
+  background: fixed url(../../common/images/project1_main.png) no-repeat 50%/cover;
+  top: 0;
+}
+.project_bg .bg_text {
+  color: #fff;
+  position: absolute;
+  left: 5vw;
+  bottom: 5vw;
+}
+.project_bg .bg_text h2 {
+  font-family: "Mulish";
+  font-size: 8em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.project_bg .bg_text p {
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.project_bg .bg_text ul {
+  font-family: "Mulish";
+  font-size: 1.5em;
+}
+
+/********** main **********/
+.project_container {
+  max-width: 1000px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+.project_container .project_overview {
+  margin-bottom: 200px;
+}
+.project_container .project_overview .overview_title {
+  margin-bottom: 100px;
+}
+.project_container .project_overview .overview_title h3 {
+  margin: 150px 0 30px;
+}
+.project_container .project_overview .overview_title .bold {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.project_container .project_overview .overview_title p {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.project_container .project_overview .overview_list ul {
+  display: flex;
+  justify-content: space-around;
+}
+.project_container .project_overview .overview_list ul li {
+  padding: 0 20px;
+  text-align: center;
+}
+.project_container .project_overview .overview_list ul li::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+}
+.project_container .project_info .info_img {
+  height: 30vw;
+  background: url(../../common/images/webD1.jpg) no-repeat 50%/contain;
+  margin-bottom: 100px;
+}
+.project_container .project_info .info_box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 0;
+  border-bottom: 1px solid #ddd;
+}
+.project_container .project_info .info_box h3 {
+  font-size: 2em;
+}
+.project_container .project_info .info_box ul li {
+  font-family: "Mulish", "NanumSqauer";
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.project_container .project_info .info_design .info_design_font {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.project_container .project_info .info_keywords ul li {
+  display: inline;
+  margin-right: 20px;
+}
+.project_container .project_info .info_pub ul li {
+  list-style: disc;
+}
+.project_container .project_info .info_review {
+  border-bottom: none;
+}
+.project_container .project_info .info_review ul li h4 {
+  margin-bottom: 10px;
+}
+.project_container .project_info .info_review ul .review1 {
+  margin-bottom: 30px;
+}
+
+.project_others {
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+.project_others .others_list {
+  text-align: center;
+  width: 100%;
+}
+.project_others .others_list ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.project_others .others_list ul li {
+  text-align: center;
+}
+.project_others .others_list ul li a {
+  display: block;
+  padding: 60px 0;
+}
+.project_others .others_list ul li a .sub_title {
+  font-size: 2em;
+  font-weight: 500;
+  color: #fff;
+  transform: translateY(100px);
+  transition: 0.1s;
+}
+.project_others .others_list ul li a .sub_name {
+  font-size: 2em;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 0.3s;
+}
+.project_others .others_list ul li .grayscale {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.project_others .others_list ul li:hover a .sub_title {
+  opacity: 0;
+}
+.project_others .others_list ul li:hover a .sub_name {
+  opacity: 1;
+}
+.project_others .others_list ul li:hover .grayscale {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.project_others .others_list ul .prev {
+  background: url(../../common/images/project3_main.png) no-repeat 50%/cover;
+}
+.project_others .others_list ul .next {
+  background: url(../../common/images/project2_others.jpg) no-repeat 50%/cover;
+}
+.project_others .others_list .back_btn {
+  font-size: 1.5em;
+  font-weight: 600;
+  display: block;
+  padding: 30px 0;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+.project_others .others_list .back_btn:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 50px 0;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer ul li a {
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+footer ul li a span {
+  font-weight: 600;
+}
+footer ul li a:hover {
+  color: #000;
+}
+footer .back_btn {
+  display: flex;
+}
+footer .back_btn span {
+  width: 50px;
+  height: 100%;
+  background: url(../../common/images/return.png) no-repeat 50%/contain;
+}

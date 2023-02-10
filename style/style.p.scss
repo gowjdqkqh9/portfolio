@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+/********** header **********/
+.header {
+  .header_container {
+    .gnb {
+      .logo {
+        a {
+          background: url(../common/images/logo_black.png) no-repeat 50% / contain;
+        }
+      }
+      ul {
+        width: 7vw;
+        .color_mode_btn {
+          a {
+            background: url(../common/images/btn_colorMode.png) no-repeat 50% / contain;
+          }
+        }
+      }
+    }
+  }
+  .contact_btn {
+    width: 140px;
+    height: 140px;
+    bottom: 3vw;
+    right: 3vw;
+    a {
+      background: url(../common/images/goUp.png) no-repeat 50% / contain;
+    }
+  }
+}
+
+/********** menu - active **********/
+.active {
+  .header {
+    /********** menu_gnb **********/
+    .menu_gnb {
+      .contact_menu {
+        .contact_git {
+          span {
+            background: url(../common/images/gitHub.png) no-repeat 50% / contain;
+          }
+        }
+        .contact_notion {
+          span {
+            background: url(../common/images/notion.png) no-repeat 50% / contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+/********** main **********/
+.main {
+  padding: 0 15vw;
+  .title {
+    margin: 100px 0 50px;
+    transition: 0.3s;
+    li {
+      display: flex;
+      align-items: flex-end;
+      p {
+        font-size: 1.3em;
+      }
+      h2 {
+        font-size: 7em;
+        line-height: 0.7;
+        .h3 {
+          font-size: 0.2em;
+        }
+        .mobile {
+          display: none;
+        }
+      }
+    }
+  }
+  .sub_txt {
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+  }
+}
+
+/********** about **********/
+.about {
+  .aboutMe {
+    h2 {
+      font-size: 4em;
+      .br {
+        display: none;
+      }
+    }
+    h3 {
+      font-size: 1.6em;
+    }
+    p {
+      width: 30vw;
+    }
+  }
+  .keywords {
+    margin: 70px 10vw 0;
+    .keywords_wrap {
+      font-size: 3.5em;
+      li {
+        ul {
+          li {
+            height: 84px;
+            .mobile_remove {
+              display: block;
+            }
+            .mobile_add {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/********** projects **********/
+.projects {
+  flex-direction: row;
+  .title_wrap {
+    width: 30%;
+    height: 100%;
+  }
+  .img_wrap {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    .img_swp {
+      width: 70vw;
+      margin-top: 0;
+      position: absolute;
+      .swiper {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-end;
+        .swiper-wrapper {
+          height: 90%;
+          .swiper-slide {
+            width: 50%;
+            height: 100%;
+            padding-top: 0;
+            padding-right: 0;
+            display: grid;
+            align-items: center;
+            grid-template-rows: repeat(5, 1fr);
+            a {
+              // width: 100%;
+              height: 17vw;
+              grid-row: 1/4;
+              margin-left: 0;
+            }
+            .img_txt {
+              height: 100%;
+              grid-row: 4/5;
+              padding: 0;
+              h2 {
+                margin-top: 0;
+              }
+              ul {
+                li {
+                  padding: 10px 20px;
+                  margin: 5px;
+                }
+              }
+              .ul_pc {
+                display: block;
+              }
+              .ul_tab {
+                display: none;
+              }
+              .ul_mobil {
+                display: none;
+              }
+            }
+          }
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          top: 400px;
+        }
+      }
+    }
+  }
+}
+
+/********** skills **********/
+.skills {
+  h2 {
+  }
+  ul {
+    li {
+      font-size: 2em;
+    }
+    .skill_box {
+      .box_txt {
+        padding: 20px 0 20px 15vw;
+        margin: 0;
+        li {
+          // padding: ;
+        }
+      }
+      &.on {
+        height: 108px;
+      }
+    }
+  }
+}
+
+/********** contact **********/
+.contact {
+  .contact_wrap {
+    display: flex;
+    flex-direction: row;
+    .git {
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: none;
+      .git_logo {
+        background: url(../common/images/gitHub.png) no-repeat 50% / contain;
+      }
+    }
+    .notion {
+      .notion_logo {
+        background: url(../common/images/notion.png) no-repeat 50% / contain;
+      }
+    }
+    a {
+      .right {
+        background: url(../common/images/contact_right.svg) no-repeat 50% / contain;
+      }
+    }
+  }
+
+  /********** footer **********/
+  footer {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around {
+        padding-left: 0;
+      }
+    }
+  }
+}
