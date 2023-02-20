@@ -511,7 +511,7 @@ li {
 
 /********** main **********/
 .project_container {
-  min-width: 955px;
+  min-width: 850px;
   background-color: #fff;
   margin-top: 100vh;
   padding: 50px 15vw;
@@ -638,6 +638,7 @@ li {
     .info_pub {
       ul {
         li {
+          font-family: "NanumSquare";
           font-size: 17px;
           list-style: disc;
           line-height: 1.6;
@@ -647,15 +648,15 @@ li {
     .info_review {
       border-bottom: none;
       ul {
-        li {
+        .review {
+          font-family: "NanumSquare";
+          margin-bottom: 40px;
           h4 {
             margin-bottom: 10px;
           }
-        }
-        .review {
-          margin-bottom: 30px;
           p {
-            font-size: 16px;
+            font-size: 17px;
+            margin-bottom: 10px;
           }
         }
         .project_btn {
@@ -679,12 +680,6 @@ li {
                 .br {
                   display: none;
                 }
-              }
-              a::after {
-                content: "";
-                width: 50px;
-                height: 2px;
-                background-color: #ddd;
               }
             }
             li:hover {

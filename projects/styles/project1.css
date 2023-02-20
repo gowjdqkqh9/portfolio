@@ -576,9 +576,10 @@ li {
 }
 .project_container .project_info .info_review ul .project_btn ul li {
   width: 49%;
+  box-sizing: border-box;
   color: #fff;
   background-color: #000;
-  border: 2px solid #000;
+  border: 1px solid #000;
   text-align: center;
   transition: 0.3s;
 }
@@ -586,21 +587,13 @@ li {
   font-weight: 600;
   display: block;
   padding: 20px 25px;
-  display: flex;
 }
 .project_container .project_info .info_review ul .project_btn ul li a .br {
   display: none;
 }
-.project_container .project_info .info_review ul .project_btn ul li a span {
-  margin-left: 10px;
-  transition: 0.3s;
-}
 .project_container .project_info .info_review ul .project_btn ul li:hover {
   color: #000;
   background-color: #fff;
-}
-.project_container .project_info .info_review ul .project_btn ul li:hover a span {
-  transform: translateX(10px);
 }
 
 footer {

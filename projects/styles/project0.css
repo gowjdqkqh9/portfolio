@@ -454,7 +454,7 @@ li {
 
 /********** main **********/
 .project_container {
-  min-width: 955px;
+  min-width: 850px;
   background-color: #fff;
   margin-top: 100vh;
   padding: 50px 15vw;
@@ -563,6 +563,7 @@ li {
   font-weight: 500;
 }
 .project_container .project_info .info_pub ul li {
+  font-family: "NanumSquare";
   font-size: 17px;
   list-style: disc;
   line-height: 1.6;
@@ -570,14 +571,16 @@ li {
 .project_container .project_info .info_review {
   border-bottom: none;
 }
-.project_container .project_info .info_review ul li h4 {
+.project_container .project_info .info_review ul .review {
+  font-family: "NanumSquare";
+  margin-bottom: 40px;
+}
+.project_container .project_info .info_review ul .review h4 {
   margin-bottom: 10px;
 }
-.project_container .project_info .info_review ul .review {
-  margin-bottom: 30px;
-}
 .project_container .project_info .info_review ul .review p {
-  font-size: 16px;
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 .project_container .project_info .info_review ul .project_btn {
   margin: 100px 0;
@@ -603,12 +606,6 @@ li {
 }
 .project_container .project_info .info_review ul .project_btn ul li a .br {
   display: none;
-}
-.project_container .project_info .info_review ul .project_btn ul li a::after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background-color: #ddd;
 }
 .project_container .project_info .info_review ul .project_btn ul li:hover {
   color: #000;
