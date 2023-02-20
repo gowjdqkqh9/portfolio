@@ -505,17 +505,45 @@ li {
   display: inline;
   margin-right: 20px;
 }
+.project_container .project_info .info_design .info_design_color {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+.project_container .project_info .info_design .info_design_color span {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.project_container .project_info .info_design .info_design_color .color1 {
+  background-color: #69c270;
+}
+.project_container .project_info .info_design .info_design_color .color2 {
+  background-color: #f5af01;
+  transform: translateX(-30px);
+}
+.project_container .project_info .info_design .info_design_color .color3 {
+  background-color: #cf2327;
+  transform: translateX(-60px);
+}
+.project_container .project_info .info_design .info_design_color .color4 {
+  background-color: #000;
+  transform: translateX(-90px);
+}
 .project_container .project_info .info_design .info_design_font .font {
   font-size: 15px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 .project_container .project_info .info_design .info_design_font .notoSans {
-  font-family: "NotoSans-Regular", "NanumSquare";
+  font-family: "NotoSans-Regular";
   margin-bottom: 50px;
 }
+.project_container .project_info .info_design .info_design_font .notoSans ul li {
+  font-family: "NotoSans-Regular";
+}
 .project_container .project_info .info_design .info_design_font .basicSans {
-  font-family: "Basic-Sans-Regular", "NanumSquare";
+  font-family: "Basic-Sans-Regular";
 }
 .project_container .project_info .info_pub ul li {
   font-size: 17px;
