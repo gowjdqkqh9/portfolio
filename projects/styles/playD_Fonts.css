@@ -1,0 +1,23 @@
+/* notoSans */
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url(../fonts/NotoSans-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSans-DemiLight";
+  src: url(../fonts/NotoSans-DemiLight.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url(../fonts/NotoSans-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url(../fonts/NotoSans-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Basic-Sans-Regular";
+  src: url(../fonts/BasicSans-Regular.woff) format("woff");
+  src: url(../fonts/BasicSans-Regular.woff2) format("woff2");
+}

@@ -1,17 +1,21 @@
-/************ fullpage ************/
-// $("#fullpage").fullpage({
-//   slidesNavigation: true,
-//   responsiveWidth: 1024,
-//   autoScrolling: true,
-// });
+/************ header_container ************/
+const header = document.querySelector(".gnb");
+const upBtn = document.querySelector(".upBtn");
 
-// window.addEventListener(
-//   "wheel",
-//   function (e) {
-//     e.preventDefault();
-//   },
-//   { passive: false }
-// );
+addEventListener("scroll", () => {
+  const scrollValue = document.documentElement.scrollTop;
+  // console.log({ scrollValue });
+
+  if (scrollValue >= 100) {
+    header.style.height = "60px";
+    upBtn.style.opacity = "1";
+    upBtn.classList.add("top_btn");
+  } else {
+    header.style.height = "100px";
+    upBtn.style.opacity = "0";
+    upBtn.classList.remove("top_btn");
+  }
+});
 
 /************ Menu ************/
 const toggleBtn = document.querySelector("#toggle_btn");
@@ -28,23 +32,6 @@ menuBtn.forEach((elem) =>
     menuGnb.classList.remove("active");
   })
 );
-
-/* moseover */
-menuBtn.forEach((item) => {
-  item.addEventListener("mouseover", () => {
-    item.style.color = "#000";
-
-    const target = e.currentTarget;
-    const itemNext = target.nextElementSibling;
-    const itemPrev = target.previousElementSibling;
-
-    itemNext.style.color = "#ddd";
-    itemPrev.style.color = "#ddd";
-  });
-  item.addEventListener("mouseout", () => {
-    // item.style.color = "#000";
-  });
-});
 
 /************ main ************/
 const text1 = document.querySelector(".text1");
@@ -68,7 +55,6 @@ const typing = async () => {
   }
   await wait(600);
   text1.classList.remove("text");
-
   // text2
   while (letter2.length) {
     await wait(speed);
@@ -77,7 +63,6 @@ const typing = async () => {
   }
   await wait(600);
   text2.classList.remove("text");
-
   // text3
   while (letter3.length) {
     await wait(speed);
@@ -101,7 +86,6 @@ const remove = async () => {
   }
   text3.classList.remove("text");
   text2.classList.add("text");
-
   while (letter2.length) {
     await wait(speed);
     letter2.pop();
@@ -109,7 +93,6 @@ const remove = async () => {
   }
   text2.classList.remove("text");
   text1.classList.add("text");
-
   while (letter1.length) {
     await wait(speed);
     letter1.pop();
@@ -131,24 +114,20 @@ setTimeout(typing, 900); // 초기 실행
 /* scroll event */
 const about = document.querySelector("#about");
 const aboutMe = document.querySelector(".aboutMe");
-// const scrollY = this.scrollY;
-// console.log({ scrollY });
 const aboutHt = about.offsetTop - 300;
-console.log({ aboutHt });
 const keywords = document.querySelector(".keywords");
 const keywordsUl = document.querySelector(".keywords_ul");
+// console.log({ aboutHt });
 
 addEventListener("scroll", () => {
   const scrollValue = document.documentElement.scrollTop;
-  console.log({ scrollValue });
+
   if (scrollValue >= 800) {
     keywordsUl.classList.add("keywords_wrap");
     keywords.style.opacity = "1";
-    // keywords.style.transform = "translateY(0)";
   } else {
     keywordsUl.classList.remove("keywords_wrap");
     keywords.style.opacity = "0";
-    // keywords.style.transform = "translateY(50px)";
   }
 });
 
@@ -158,10 +137,13 @@ const openBtn = document.querySelectorAll(".open_btn");
 openBtn.forEach((elem) =>
   elem.addEventListener("click", (e) => {
     e.preventDefault();
+
     const target = e.currentTarget;
-    console.log(target.nextElementSibling);
+    // console.log(target.nextElementSibling);
+
+    target.classList.toggle("on");
+
     target.nextElementSibling.classList.toggle("on");
+    // target.previousElementSibling.classList.remove("on");
   })
 );
-
-/************ Projects ************/

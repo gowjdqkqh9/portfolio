@@ -22,8 +22,8 @@
 .active .header {
   /********** menu_gnb **********/
 }
-.active .header .menu_gnb ul {
-  margin-top: 0;
+.active .header .menu_gnb ul li {
+  line-height: 1.5;
 }
 .active .header .menu_gnb .main_menu {
   font-size: 5em;
@@ -40,7 +40,7 @@
   padding: 0 15vw;
 }
 .main .title {
-  margin: 100px 0 50px;
+  margin: 50px 0 50px;
   transition: 0.3s;
 }
 .main .title li {
@@ -65,7 +65,6 @@
 .main .sub_txt p {
   font-size: 16px;
   line-height: 1.6;
-  margin-top: 20px;
 }
 
 /********** about **********/
@@ -79,10 +78,10 @@
   font-size: 1.6em;
 }
 .about .aboutMe p {
-  width: 30vw;
+  width: 40vw;
 }
 .about .keywords {
-  margin: 70px 10vw 0;
+  margin: 70px 0 0;
 }
 .about .keywords .keywords_wrap {
   font-size: 3.5em;
@@ -123,20 +122,19 @@
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide {
   width: 50%;
   height: 100%;
-  padding-top: 0;
-  padding-right: 0;
   display: grid;
+  padding: 0 60px;
   align-items: center;
   grid-template-rows: repeat(4, 1fr);
-  padding-left: 100px;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide a {
   height: 22vw;
   grid-row: 1/4;
   margin-left: 0;
+  margin: 0 auto;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt {
-  width: 100%;
+  width: 90%;
   height: 100%;
   grid-row: 4/5;
   padding: 0;
@@ -154,40 +152,57 @@
   padding: 10px 20px;
   margin: 3px 6px 3px 0;
 }
-.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .ul_pc {
-  display: none;
-}
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .ul_tab {
   display: block;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .ul_mobil {
   display: none;
 }
-.projects .img_wrap .img_swp .swiper .swiper-wrapper .slide1 {
-  padding-left: 0;
-}
 .projects .img_wrap .img_swp .swiper .swiper-button-next,
 .projects .img_wrap .img_swp .swiper .swiper-button-prev {
   color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 320px;
+  top: 190px;
+}
+.projects .img_wrap .img_swp .swiper .swiper-button-next {
+  right: 17vw;
+}
+.projects .img_wrap .img_swp .swiper .swiper-button-prev {
+  left: 17vw;
 }
 
 /********** skills **********/
+.skills ul {
+  margin: 0 auto;
+}
 .skills ul li {
   font-size: 2em;
 }
 .skills ul .skill_box .box_txt {
-  padding: 20px 0 20px 15vw;
   margin: 0;
 }
-.skills ul .skill_box.on {
-  height: 108px;
+.skills ul .box1.on {
+  height: 140px;
+}
+.skills ul .box2.on {
+  height: 140px;
+}
+.skills ul .box3.on {
+  height: 140px;
+}
+.skills ul .box4.on {
+  height: 90px;
+}
+.skills ul .last_box {
+  height: 170px;
 }
 
 /********** contact **********/
 .contact {
   /********** footer **********/
+}
+.contact .roll {
+  font-size: 9.5em;
 }
 .contact .contact_wrap {
   display: flex;

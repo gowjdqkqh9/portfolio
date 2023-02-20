@@ -2,11 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
   font-family: "NanumSqauer";
+  font-size: 17px;
 }
 
 .section {
@@ -27,6 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  transition: 0.3s;
 }
 .header .header_container .gnb .logo {
   width: 33px;
@@ -43,7 +55,7 @@ body {
   font-weight: 600;
   letter-spacing: 10px;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .header .header_container .gnb ul {
   width: 15vw;
@@ -91,13 +103,17 @@ body {
   height: 60%;
 }
 .header .menu_gnb {
-  display: none;
-  width: 0;
-  height: 0;
-  margin-top: 100px;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
+  transform: translateX(100vw);
+  position: absolute;
+}
+.header .menu_gnb ul li a {
+  transition: 1s;
 }
 .header .contact_btn {
   width: 100px;
@@ -119,10 +135,45 @@ body {
 .header .contact_btn:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+.header .upBtn {
+  opacity: 0;
+}
+.header .top_btn {
+  height: 30px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 40px;
+  left: 5vw;
+  opacity: 0;
+  transition: 0.3s;
+}
+.header .top_btn a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.header .top_btn a span {
+  margin-right: 5px;
+  font-size: 1.6em;
+}
+.header .top_btn:hover {
+  height: 50px;
+  background-image: linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 3s infinite linear;
+}
 
 /********** menu - active **********/
 .active .header {
   /********** menu_gnb **********/
+}
+.active .header .header_container .gnb {
+  background-color: #fff;
 }
 .active .header .header_container .gnb .title {
   font-family: "Inter", "NanumSqaure";
@@ -158,22 +209,24 @@ body {
   height: 60%;
 }
 .active .header .menu_gnb {
+  height: 90vh;
   opacity: 1;
-  animation: menu_mov 3s ease forwards;
+  transform: translateX(0);
+  transition: 1s;
 }
 .active .header .menu_gnb ul {
   display: flex;
   font-family: "Mulish";
-  margin-top: 50px;
 }
 .active .header .menu_gnb ul li {
   line-height: 1.7;
 }
 .active .header .menu_gnb ul li a:hover {
-  color: #000;
-}
-.active .header .menu_gnb ul li a:hover ~ a {
-  color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 3s infinite linear;
 }
 .active .header .menu_gnb .main_menu {
   display: flex;
@@ -214,7 +267,7 @@ body {
 .active .header .menu_gnb .bg_border {
   z-index: -9999;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: absolute;
   top: 0;
   display: flex;
@@ -274,22 +327,58 @@ body {
   border-right: 2px solid #777;
   animation: cursor 0.7s infinite steps(2);
 }
-.main .sub_txt {
-  margin-top: 20px;
-}
 .main .sub_txt p {
   font-size: 15px;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   opacity: 0;
-  animation: subTxt 4s ease 0.5s forwards;
+  animation: subTxt 3s ease 0.5s forwards;
   line-height: 1.6;
 }
 
+.scroll_down {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transition: 0.3s;
+}
+.scroll_down .scroll_mouse {
+  display: block;
+  width: 25px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  position: relative;
+}
+.scroll_down .scroll_mouse .scroll_ball {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: mouse 1.7s infinite ease-in-out;
+}
+
 /********** about **********/
+#about {
+  padding-top: 100px;
+}
+
+.about {
+  padding: 0 15vw;
+}
 .about .aboutMe {
   line-height: 1.6;
-  margin: 0 10vw;
   transform: translateY(50px);
   opacity: 0;
   transition: 0.5s;
@@ -298,7 +387,6 @@ body {
   font-family: "Mulish";
   font-weight: 800;
   margin: 0;
-  margin-top: 100px;
   font-size: 4em;
 }
 .about .aboutMe h2 .br {
@@ -313,15 +401,16 @@ body {
 .about .aboutMe p {
   font-family: "NanumSquare";
   font-weight: 400;
-  width: 70vw;
+  width: 60vw;
   font-size: 16px;
   margin: 0;
   margin-top: 20px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
 }
 .about .keywords {
   height: 100%;
-  margin: 0 40px;
+  margin-top: 40px;
 }
 .about .keywords .keywords_wrap {
   font-family: "NanumSquare";
@@ -354,7 +443,7 @@ body {
 }
 .about .keywords .keywords_wrap li ul li .bold {
   font-weight: 600;
-  animation: size 2s ease forwards;
+  animation: size 3s ease forwards;
 }
 .about .keywords .keywords_wrap li ul li .up {
   animation: up 1s ease forwards;
@@ -382,7 +471,7 @@ body {
 .projects .title_wrap {
   width: 100%;
   height: 30%;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -395,7 +484,7 @@ body {
   margin-bottom: 80px;
 }
 .projects .title_wrap .sub_title {
-  width: 230px;
+  width: 300px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
@@ -464,20 +553,54 @@ body {
   margin: 50px auto 0;
   display: block;
   transition: 0.3s;
+  position: relative;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide a img {
   height: 100%;
   border: 7px solid #000;
   border-radius: 10px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide a .grayscale {
+  width: 100%;
+  height: 104%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide a .grayscale span {
+  width: 100px;
+  height: 100px;
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #fff;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide a:hover {
+  position: relative;
+  cursor: url(../common/images/zoom.svg) 4 5, auto;
+}
+.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide a:hover .grayscale {
+  opacity: 1;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt {
   font-family: "Mulish";
-  width: 55%;
+  width: 70%;
   height: 50%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 50px auto 0;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt h2 {
   font-size: 1.4em;
@@ -499,13 +622,14 @@ body {
   margin: 0;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .view a {
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   background-color: #000;
   border-radius: 50px;
   margin: 0;
   margin-left: 10px;
   transition: 0.3s;
+  cursor: pointer;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .view a .view_bg {
   width: 100%;
@@ -517,22 +641,19 @@ body {
   overflow: hidden;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .view a .view_bg p {
-  font-size: 1.5em;
+  display: flex;
+  font-size: 1.3em;
   color: #fff;
-  transform: translateX(-36px);
+  transform: translateX(-28px);
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .view a .view_bg p span {
-  padding-right: 20px;
+  padding-left: 10px;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .view a:hover {
   width: 100px;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .view a:hover .view_bg p {
   transform: translateX(0);
-}
-.projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .view a:hover .view_bg p span {
-  padding-right: 10px;
-  font-size: 20px;
 }
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt ul {
   display: flex;
@@ -554,30 +675,49 @@ body {
 .projects .img_wrap .img_swp .swiper .swiper-wrapper .swiper-slide .img_txt .ul_tab {
   display: none;
 }
+.projects .img_wrap .img_swp .swiper .swiper-button-next {
+  right: 5vw;
+}
+.projects .img_wrap .img_swp .swiper .swiper-button-prev {
+  left: 5vw;
+}
 .projects .img_wrap .img_swp .swiper .swiper-button-next,
 .projects .img_wrap .img_swp .swiper .swiper-button-prev {
   color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 150px;
+  top: 160px;
+}
+.projects .img_wrap .img_swp .swiper .swiper-button-next:hover,
+.projects .img_wrap .img_swp .swiper .swiper-button-prev:hover {
+  background-image: linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 3s infinite linear;
 }
 .projects .img_wrap .img_swp .swiper .swiper-pagination {
   display: none;
 }
 
 /********** skills **********/
+#skills {
+  margin: 100px 0 300px;
+}
+
 .skills {
   line-height: 1.6;
-  margin: 0 10vw;
-  padding-top: 100px;
+  margin: 0 15vw;
+  padding-top: 50px;
 }
 .skills h2 {
   font-family: "Mulish";
   font-weight: 800;
   font-size: 4em;
-  margin: 100px 0 50px;
+  margin: 0 0 30px;
 }
 .skills ul {
-  margin: 0 5vw;
+  max-width: 1100px;
+  margin: 0 auto;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -592,6 +732,8 @@ body {
   padding: 25px;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  cursor: pointer;
 }
 .skills ul .skill_title .title_txt {
   display: flex;
@@ -617,9 +759,15 @@ body {
 .skills ul .skill_title .title_txt .plus .column {
   width: 1px;
   height: 100%;
+  transition: 0.3s;
 }
-.skills ul .skill_title:hover .title_txt .plus {
-  transform: rotate(90deg);
+.skills ul .skill_title .title_txt .plus .column.on {
+  height: 0;
+}
+.skills ul .skill_title:hover .title_txt .plus span {
+  background-image: linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-text-fill-color: transparent;
+  animation: hue 3s infinite linear;
 }
 .skills ul .skill_box {
   width: 100%;
@@ -627,7 +775,7 @@ body {
   transition: 0.4s;
 }
 .skills ul .skill_box .box_txt {
-  padding: 20px 0 10px 60px;
+  padding: 30px 0 30px 60px;
   background-color: rgb(240, 240, 240);
   list-style: disc;
   display: grid;
@@ -636,14 +784,29 @@ body {
 .skills ul .skill_box .box_txt li {
   font-family: "NanumSquare";
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
   padding-right: 50px;
 }
-.skills ul .skill_box.on {
-  height: 250px;
+.skills ul .skill_title.on .title_txt .plus .column {
+  height: 0;
+}
+.skills ul .box1.on {
+  height: 380px;
+}
+.skills ul .box2.on {
+  height: 300px;
+}
+.skills ul .box3.on {
+  height: 400px;
+}
+.skills ul .box4.on {
+  height: 300px;
+}
+.skills ul .box5.on {
+  height: 340px;
 }
 .skills ul .last_box {
-  height: 150px;
+  height: 225px;
   background-color: #fff;
 }
 
@@ -661,8 +824,8 @@ body {
   height: 100%;
   font-family: "NanumSquare";
   font-weight: 600;
-  font-size: 10em;
-  color: rgba(0, 0, 0, 0.04);
+  font-size: 9.5em;
+  color: rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 .contact .roll .roll_wrap {
@@ -758,6 +921,13 @@ body {
   margin-bottom: 47px;
   margin-left: 5vw;
   transition: 0.3s;
+}
+.contact .contact_wrap a:hover p .bold {
+  background-image: linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 3s infinite linear;
 }
 .contact footer {
   font-family: "Mulish";

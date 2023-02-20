@@ -183,7 +183,7 @@ li {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    bottom: 40px;
+    bottom: 60px;
     left: 5vw;
     opacity: 0;
     transition: 0.3s;
@@ -200,7 +200,10 @@ li {
   }
   .top_btn:hover {
     height: 50px;
-    color: #000;
+    background-image: linear-gradient(92deg, #f35626, #feab3a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 3s infinite linear;
   }
 }
 
@@ -352,13 +355,96 @@ li {
   z-index: -9999;
   width: 100%;
   height: 100vh;
-  background: url(../../common/images/project1_main.png) no-repeat 50% / cover;
+  // background: url(../../common/images/web_portfolio.jpg) no-repeat 50% / cover;
   position: fixed;
   top: 0;
   left: 0;
   .bg_grayscale {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    /********** main **********/
+    .main {
+      height: 100%;
+      padding: 0 15vw;
+      display: grid;
+      align-content: center;
+      position: absolute;
+      bottom: 100px;
+      .title {
+        line-height: 1.1;
+        transition: 0.3s;
+        padding: 0;
+        margin: 40px 0 30px;
+        li {
+          p {
+            height: 23px;
+            font-size: 1.3em;
+            font-weight: 600;
+            letter-spacing: 3px;
+            line-height: 0.7;
+            margin-bottom: 20px;
+          }
+          h2 {
+            font-family: "Inter";
+            font-size: 7em;
+            font-weight: 100;
+            margin: 0;
+            margin-bottom: 30px;
+            line-height: 0.7;
+            .bold {
+              font-weight: bold;
+            }
+            .h3 {
+              font-family: "NanumSquare";
+              font-weight: 600;
+              font-size: 0.2em;
+              margin: 0 10px;
+              letter-spacing: 3px;
+            }
+            .mobile {
+              display: none;
+            }
+          }
+          .text::after {
+            content: "";
+            border-right: 2px solid #777;
+            animation: cursor 0.7s infinite steps(2);
+          }
+        }
+      }
+    }
+    .scroll_down {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 4em;
+      left: 10%;
+      transition: 0.3s;
+      .scroll_mouse {
+        display: block;
+        width: 25px;
+        height: 45px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        position: relative;
+        .scroll_ball {
+          display: block;
+          position: absolute;
+          top: 6px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.5);
+          animation: mouse 1.7s infinite ease-in-out;
+        }
+      }
+    }
   }
   .bg_text {
     width: 90%;
@@ -371,7 +457,7 @@ li {
     // left: 5vw;
     h2 {
       font-family: "Mulish";
-      font-size: 8em;
+      font-size: 7em;
       font-weight: 800;
       margin-bottom: 10px;
     }
@@ -624,36 +710,30 @@ li {
             justify-content: space-between;
             li {
               width: 49%;
+              box-sizing: border-box;
               color: #fff;
               background-color: #000;
-              border: 2px solid #000;
+              border: 1px solid #000;
               text-align: center;
               transition: 0.3s;
               a {
                 font-weight: 600;
                 display: block;
                 padding: 20px 25px;
-
-                display: flex;
                 .br {
                   display: none;
                 }
-                span {
-                  // opacity: 0;
-                  margin-left: 10px;
-                  transition: 0.3s;
-                }
+              }
+              a::after {
+                content: "";
+                width: 50px;
+                height: 2px;
+                background-color: #ddd;
               }
             }
             li:hover {
               color: #000;
               background-color: #fff;
-              a {
-                span {
-                  // opacity: 1;
-                  transform: translateX(10px);
-                }
-              }
             }
           }
         }

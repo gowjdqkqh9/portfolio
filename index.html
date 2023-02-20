@@ -6,25 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>마해정 포트폴리오</title>
 
+    <!-- og -->
+    <meta property="og:title" content="마해정 포트폴리오" />
+    <meta property="og:description" content="변화의 시작이 될 프론트엔드 개발자 마해정입니다" />
+    <meta property="og:image" content="https://ezen-playd.github.io/playD/images/open/open.png" />
+    <meta property="og:url" content="https://ezen-playd.github.io/playD" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./common/images/logo_black.ico" type="image/x-icon" />
+    <link rel="icon" href="./common/images/logo_black.ico" type="image/x-icon" />
+
     <!-- reset -->
     <link rel="stylesheet" href="./common/style/reset.css" />
-
-    <!-- fullpage -->
-    <!-- <link
+    <!-- animation -->
+    <link rel="stylesheet" href="./common/style/animation.css" />
+    <!-- font -->
+    <link rel="stylesheet" href="./common/style/font.css" />
+    <!-- icon -->
+    <link
       rel="stylesheet"
-      type="text/css"
-      href="./common/style/fullPage.js-2.9.7/jquery.fullPage.css"
-    /> -->
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
 
     <!-- scroll event -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./common/style/swiper-bundle.min.css" />
-
-    <!-- animation -->
-    <link rel="stylesheet" href="./style/animation.css" />
 
     <!-- style -->
     <link rel="stylesheet" href="./style/style.css" />
@@ -32,14 +40,14 @@
     <link rel="stylesheet" media="(min-width:1240px)" href="./style/style.p.css" />
   </head>
 
-  <body>
+  <body style="overflow-x: hidden">
     <div id="fullpage">
       <!-- header -->
       <header class="header">
         <div class="header_container">
           <div class="gnb">
             <h1 class="logo">
-              <a href="/"></a>
+              <a href="./index.html"></a>
             </h1>
             <h2 class="title">마해정 포트폴리오</h2>
             <ul>
@@ -93,6 +101,10 @@
         <aside class="contact_btn">
           <a href="#contact"></a>
         </aside>
+
+        <aside class="upBtn">
+          <a href="#"><span class="material-symbols-outlined"> expand_less </span>Back To Top</a>
+        </aside>
       </header>
 
       <!-- main -->
@@ -118,21 +130,30 @@
             </li>
           </ul>
           <div class="sub_txt">
-            <p>뮤자이너는 고객과 커뮤니케이션을 넘어<br />고객으로부터 영감을 얻는 사람</p>
             <p>
-              결과물을 넘어<br />
-              아이디어가 담긴 창작물을 만드는 사람
+              꾸준한 노력과 책임감 있는 태도로<br />
+              끊임없이 성장하는 사람
             </p>
             <p>
-              시선을 끄는 것을 넘어<br />
-              질리지 않는 아름다움을 추구하는 사람입니다.
+              디자인과 개발에 대한 이해로 효율적인<br />
+              소통 및 협업이 가능한 사람
             </p>
             <p>
-              뮤자이너를 꿈꾸는 사람들이 있는곳,<br />
-              뮤자인과 함께 할 인재들을 기다리고 있습니다.
+              넘치는 배려와 경청하는 자세로<br />
+              팀원과의 화합에 화음을 쌓을 수 있는 사람
+            </p>
+            <p>
+              변화의 시작이 될 수 있는<br />
+              일당백의 영리한 개발자가 되겠습니다.
             </p>
           </div>
         </article>
+        <div class="scroll_down">
+          <span class="scroll_mouse">
+            <span class="scroll_ball"></span>
+          </span>
+          <p>scroll</p>
+        </div>
       </div>
 
       <!-- about me -->
@@ -232,27 +253,62 @@
               <!-- Swiper -->
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+                  <!-- Portfolio -->
                   <div class="swiper-slide slide1">
-                    <a href="#"><img src="./common/images/webD1.jpg" alt="PLAYD" /></a>
+                    <a href="./projects/project0.html" target="_blank"
+                      ><img src="./common/images/web_portfolio.jpg" alt="Portfolio" />
+                      <div class="grayscale">
+                        <span>view</span>
+                      </div>
+                    </a>
                     <div class="img_txt">
-                      <!-- <h2>01</h2> -->
+                      <div class="view">
+                        <h3>Portfolio 제작 일지</h3>
+                        <a href="./projects/project0.html"
+                          ><div class="view_bg">
+                            <p>view<span class="material-symbols-outlined"> add </span></p>
+                          </div></a
+                        >
+                      </div>
+                      <div class="ul_tab">
+                        <ul>
+                          <li># 개인 작업</li>
+                          <li># 포트폴리오 제작</li>
+                        </ul>
+                        <ul>
+                          <li># SCSS</li>
+                          <li># JAVASCRIPT</li>
+                          <li># 반응형</li>
+                        </ul>
+                      </div>
+                      <div class="ul_mobil">
+                        <ul>
+                          <li># 팀 프로젝트</li>
+                          <li># 웹사이트 구현</li>
+                        </ul>
+                        <ul>
+                          <li># SCSS</li>
+                          <li># JAVASCRIPT</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- PlayD -->
+                  <div class="swiper-slide slide2">
+                    <a href="./projects/project1.html" target="_blank"
+                      ><img src="./common/images/webD1.jpg" alt="PLAYD" />
+                      <div class="grayscale">
+                        <span>view</span>
+                      </div>
+                    </a>
+                    <div class="img_txt">
                       <div class="view">
                         <h3>PLAYD</h3>
-                        <a href="#">
-                          <div class="view_bg">
-                            <p><span>view</span>+</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="ul_pc">
-                        <ul>
-                          <li># 팀 프로젝트</li>
-                          <li># 웹사이트 구현</li>
-                        </ul>
-                        <ul>
-                          <li># SCSS</li>
-                          <li># JAVASCRIPT</li>
-                        </ul>
+                        <a href="#"
+                          ><div class="view_bg">
+                            <p>view<span class="material-symbols-outlined"> add </span></p>
+                          </div></a
+                        >
                       </div>
                       <div class="ul_tab">
                         <ul>
@@ -276,27 +332,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <a href="#"><img src="./common/images/webD2.jpg" alt="PLAYD" /></a>
+                  <!-- Wifi Dosirak -->
+                  <div class="swiper-slide slide3">
+                    <a href="./projects/project2.html" target="_blank"
+                      ><img src="./common/images/webD2.jpg" alt="WIFIDOSIRAK" />
+                      <div class="grayscale">
+                        <span>view</span>
+                      </div></a
+                    >
                     <div class="img_txt">
-                      <!-- <h2>02</h2> -->
                       <div class="view">
-                        <h3>도시락통</h3>
-                        <a href="#">
-                          <div class="view_bg">
-                            <p><span>view</span>+</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="ul_pc">
-                        <ul>
-                          <li># 팀 프로젝트</li>
-                          <li># 웹사이트 구현</li>
-                          <li># SCSS</li>
-                        </ul>
-                        <ul>
-                          <li>GIT</li>
-                        </ul>
+                        <h3>WIFIDOSIRAK</h3>
+                        <a href="#"
+                          ><div class="view_bg">
+                            <p>view<span class="material-symbols-outlined"> add </span></p>
+                          </div></a
+                        >
                       </div>
                       <div class="ul_tab">
                         <ul>
@@ -318,27 +369,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <a href="#"><img src="./common/images/webD3.jpg" alt="PLAYD" /></a>
+                  <!-- AquaTree -->
+                  <div class="swiper-slide slide4">
+                    <a href="./projects/project3.html" target="_blank"
+                      ><img src="./common/images/webD3.jpg" alt="AQUATREE" />
+                      <div class="grayscale">
+                        <span>view</span>
+                      </div></a
+                    >
                     <div class="img_txt">
-                      <!-- <h2>03</h2> -->
                       <div class="view">
                         <h3>AQUATREE</h3>
-                        <a href="#">
-                          <div class="view_bg">
-                            <p><span>view</span>+</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="ul_pc">
-                        <ul>
-                          <li># 개인작업</li>
-                          <li># 웹 사이트 구현</li>
-                          <li># SCSS</li>
-                        </ul>
-                        <ul>
-                          <li># REACT</li>
-                        </ul>
+                        <a href="#"
+                          ><div class="view_bg">
+                            <p>view<span class="material-symbols-outlined"> add </span></p>
+                          </div></a
+                        >
                       </div>
                       <div class="ul_tab">
                         <ul>
@@ -362,8 +408,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">Slide 4</div>
                   <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -388,13 +434,13 @@
                 </a>
               </div>
             </li>
-            <li class="skill_box">
+            <li class="skill_box box1">
               <ul class="box_txt">
                 <li>웹 사이트 구축 및 디자인</li>
-                <li>미디어쿼리를 이용한 반응형 웹 제작</li>
                 <li>웹접근성을 고려한 시맨틱 태그</li>
+                <li>미디어쿼리를 이용한 반응형 웹 제작</li>
                 <li>flex, grid, position을 이용한 레이아웃 구현</li>
-                <li>scss, animation을 이용한 스타일 적용</li>
+                <li>scss, animation을 이용한 스타일 및 모션 적용</li>
               </ul>
             </li>
             <li class="skill_title open_btn">
@@ -406,13 +452,12 @@
                 </a>
               </div>
             </li>
-            <li class="skill_box">
+            <li class="skill_box box2">
               <ul class="box_txt">
-                <li>ES6+ 기본 문법</li>
-                <li>Map, Filter, Reduce 등 고차 함수</li>
+                <li>ES6+ 기본 문법 이해</li>
+                <li>동적 웹 사이트 구현</li>
+                <li>마우스 이벤트, 스크롤 이벤트, 폼 이벤트 등 이벤트 메소드 구현</li>
                 <li>함수 setTimeout, setInterval / 콜백함수 / async, await</li>
-                <li>통신 Fetch API, Axios 라이브러리</li>
-                <li>런타임 node js</li>
               </ul>
             </li>
             <li class="skill_title open_btn">
@@ -424,11 +469,14 @@
                 </a>
               </div>
             </li>
-            <li class="skill_box">
+            <li class="skill_box box3">
               <ul class="box_txt">
                 <li>컴포넌트 라이프 사이클에 대한 이해</li>
-                <li>Hook</li>
-                <li>React-router-dom</li>
+                <li>Styled-Components를 이요한 스타일 구현</li>
+                <li>
+                  useState, useEffect 등의 함수형 컴포넌트 (React Hook)을 이용한 동적 사이트 구현
+                </li>
+                <li>React-router-dom을 이용한 컴포넌트 이동</li>
               </ul>
             </li>
             <li class="skill_title open_btn">
@@ -440,10 +488,10 @@
                 </a>
               </div>
             </li>
-            <li class="skill_box">
+            <li class="skill_box box4">
               <ul class="box_txt">
-                <li>git bash 사용 및 깃허브를 이용한 작업물 저장</li>
-                <li>버전 관리 및 업데이트</li>
+                <li>Git Bash, VSCode 사용</li>
+                <li>GitHub를 이용한 배포</li>
               </ul>
             </li>
             <li class="skill_title open_btn">
@@ -455,7 +503,7 @@
                 </a>
               </div>
             </li>
-            <li class="skill_box">
+            <li class="skill_box box5">
               <ul class="box_txt">
                 <li>Photoshop, Illustrator, figma</li>
                 <li>이미지 편집 웹 화면 구현</li>
@@ -514,12 +562,6 @@
         </article>
       </div>
     </div>
-
-    <!-- script -->
-    <!-- <script
-      type="text/javascript"
-      src="./assets/style/fullPage.js-2.9.7/jquery.fullPage.js"
-    ></script> -->
 
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

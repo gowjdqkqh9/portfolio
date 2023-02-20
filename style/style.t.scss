@@ -36,7 +36,9 @@
     /********** menu_gnb **********/
     .menu_gnb {
       ul {
-        margin-top: 0;
+        li {
+          line-height: 1.5;
+        }
       }
       .main_menu {
         font-size: 5em;
@@ -61,7 +63,7 @@
 .main {
   padding: 0 15vw;
   .title {
-    margin: 100px 0 50px;
+    margin: 50px 0 50px;
     transition: 0.3s;
     li {
       display: flex;
@@ -87,7 +89,6 @@
     p {
       font-size: 16px;
       line-height: 1.6;
-      margin-top: 20px;
     }
   }
 }
@@ -105,11 +106,11 @@
       font-size: 1.6em;
     }
     p {
-      width: 30vw;
+      width: 40vw;
     }
   }
   .keywords {
-    margin: 70px 10vw 0;
+    margin: 70px 0 0;
     .keywords_wrap {
       font-size: 3.5em;
       li {
@@ -152,20 +153,18 @@
           .swiper-slide {
             width: 50%;
             height: 100%;
-            padding-top: 0;
-            padding-right: 0;
             display: grid;
+            padding: 0 60px;
             align-items: center;
             grid-template-rows: repeat(4, 1fr);
-            padding-left: 100px;
             a {
-              // width: 100%;
               height: 22vw;
               grid-row: 1/4;
               margin-left: 0;
+              margin: 0 auto;
             }
             .img_txt {
-              width: 100%;
+              width: 90%;
               height: 100%;
               grid-row: 4/5;
               padding: 0;
@@ -184,9 +183,6 @@
                   margin: 3px 6px 3px 0;
                 }
               }
-              .ul_pc {
-                display: none;
-              }
               .ul_tab {
                 display: block;
               }
@@ -195,15 +191,18 @@
               }
             }
           }
-          .slide1 {
-            padding-left: 0;
-          }
         }
         .swiper-button-next,
         .swiper-button-prev {
           color: rgba(0, 0, 0, 0.5);
           position: absolute;
-          top: 320px;
+          top: 190px;
+        }
+        .swiper-button-next {
+          right: 17vw;
+        }
+        .swiper-button-prev {
+          left: 17vw;
         }
       }
     }
@@ -212,29 +211,40 @@
 
 /********** skills **********/
 .skills {
-  h2 {
-  }
   ul {
+    margin: 0 auto;
     li {
       font-size: 2em;
     }
     .skill_box {
       .box_txt {
-        padding: 20px 0 20px 15vw;
+        // padding: 20px 0 20px 15vw;
         margin: 0;
-        li {
-          // padding: ;
-        }
       }
-      &.on {
-        height: 108px;
-      }
+    }
+    .box1.on {
+      height: 140px;
+    }
+    .box2.on {
+      height: 140px;
+    }
+    .box3.on {
+      height: 140px;
+    }
+    .box4.on {
+      height: 90px;
+    }
+    .last_box {
+      height: 170px;
     }
   }
 }
 
 /********** contact **********/
 .contact {
+  .roll {
+    font-size: 9.5em;
+  }
   .contact_wrap {
     display: flex;
     flex-direction: row;

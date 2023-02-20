@@ -4,93 +4,229 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>마해정 포트폴리오 - project2</title>
+    <title>프로젝트2 - WIFIDOSIRAK</title>
 
     <!-- reset -->
-    <link rel="stylesheet" href="./assets/style/minireset.css" />
+    <link rel="stylesheet" href="../common/style/reset.css" />
 
-    <link rel="stylesheet" href="./project2.css" />
+    <!-- scroll event -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="../style/animation.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./styles/project2.css" />
 
     <style></style>
   </head>
   <body>
-    <div class="project_bg"></div>
+    <!-- header -->
+    <header class="header">
+      <div class="header_container">
+        <div class="gnb">
+          <h1 class="logo">
+            <a href="./index.html"></a>
+          </h1>
+          <h2 class="title">마해정 포트폴리오</h2>
+          <ul>
+            <li class="color_mode_btn">
+              <a href="#"></a>
+            </li>
+            <li class="menu_btn" id="toggle_btn">
+              <a href="#">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="short"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- menu -->
+      <div class="menu_gnb">
+        <ul>
+          <li class="main_menu">
+            <a href="#about" class="menu_a">About Me</a>
+            <a href="#projects" class="menu_a">Projects</a>
+            <a href="#skills" class="menu_a">Skills</a>
+            <a href="#contact" class="menu_a">Contact</a>
+          </li>
+          <li class="contact_menu">
+            <div class="contact_git">
+              <a href="https://github.com/gowjdqkqh9" target="_blank" class="contact_git">GitHub</a>
+              <span></span>
+            </div>
+            <div class="contact_notion">
+              <a href="#" class="contact_notion">Notion</a> <span></span>
+            </div>
+          </li>
+        </ul>
+        <div class="bg_border">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
 
-    <div class="project_container">
-      <article class="project_overview">
+      <aside class="contact_btn">
+        <a href="#contact"></a>
+      </aside>
+    </header>
+
+    <article class="project_bg">
+      <div class="bg_grayscale"></div>
+      <div class="bg_text">
+        <h2>WIFIDOSIRAK</h2>
+        <p>와이파이도시락 : 웹 사이트 구현</p>
+        <ul>
+          <li># 팀 프로젝트</li>
+          <li># HTML / SCSS</li>
+          <li># GIT / GitHub</li>
+        </ul>
+      </div>
+    </article>
+
+    <main class="project_container">
+      <section class="project_overview">
         <div class="overview_title">
-          <h2>PLAYD</h2>
-          <h3>Overview</h3>
-          <p>
-            국내 인테리어 자재 기업인 LX 하우시스의 홈페이지를 리디자인 하였습니다 기업 소개와
-            쇼핑몰이 분리되어 있던 페이지를 합쳐 주요 정보를 한페이지 안에서 확인할 수 있도록 스크롤
-            형태로 제작하였습니다.
+          <h3 data-aos="fade-up">Overview</h3>
+          <p class="bold" data-aos="fade-up">
+            놀이 별과 눈이 위하여서, 넣는 있는가? 구할 천지는 속에 아니더면,<br />
+            오직 장식하는 위하여 기쁘며, 하는 인생을 아름다우냐?
+          </p>
+          <p data-aos="fade-up">
+            위하여서. 피고 그들의 그들은 없는 원질이<br />
+            인도하겠다는 우리의 우는 사라지지 부패뿐이다.<br />
+            오직 장식하는 위하여 기쁘며.
           </p>
         </div>
-        <div class="overview_box">
-          <ul class="overview_ul">
-            <li class="overview_list">
+        <div class="overview_list" data-aos="fade-up">
+          <ul>
+            <li>
               <h4>프로젝트</h4>
               <p>팀 작업</p>
             </li>
+            <li class="short_bar"></li>
             <li>
-              <h4>기술</h4>
-              <p>html / css / scss / javascript</p>
+              <h4>사이트</h4>
+              <p>도시락통/p></p>
             </li>
+
+            <li class="short_bar"></li>
             <li>
-              <h4></h4>
-              <p></p>
+              <h4>스킬</h4>
+              <p>HTML / SCSS / GIT</p>
             </li>
+            <li class="short_bar"></li>
             <li>
               <h4>작업기간</h4>
               <p>22.12.01 ~ 23.01.18</p>
             </li>
           </ul>
         </div>
-      </article>
+      </section>
 
-      <article class="project_info">
-        <div class="info_img">
-          <img src="" alt="" />
+      <section class="project_info">
+        <div class="info_img" data-aos="fade-up">
+          <img src="../common/images/webD2.jpg" alt="도시락통" />
         </div>
-        <div class="info_keywords"></div>
-        <div class="info_design"></div>
-        <div class="info_pub"></div>
-        <div class="info_review"></div>
-      </article>
-
-      <article class="project_others">
-        <div class="others_list">
+        <div class="info_keywords info_box" data-aos="fade-up">
+          <h3>Keywords</h3>
           <ul>
-            <li class="prev">
-              <a href="#"
-                ><p>PREVIOUS</p>
-                <p>프로젝트명</p></a
-              >
-            </li>
-            <li class="next">
-              <a href="#"></a>
-              <p>NEXT</p>
-              <p>프로젝트명</p>
+            <li># SCSS</li>
+            <li># Navigation Bar</li>
+            <li># GitHub 협업</li>
+          </ul>
+        </div>
+        <div class="info_design info_box" data-aos="fade-up">
+          <h3>Design</h3>
+          <ul>
+            <li class="info_design_color"></li>
+            <li class="info_design_font">
+              <h5>폰트</h5>
+              <ul>
+                <li>가나다라마바사아자차카타파하</li>
+                <li>ABCDEFGHIJKLNMOPQRSTUVWXYZ</li>
+                <li>abcdefghijklnmopqrstuvwxyz</li>
+                <li>0123456789</li>
+              </ul>
             </li>
           </ul>
-          <a href="#">project 목록으로 돌아가기</a>
         </div>
-      </article>
+        <div class="info_pub info_box" data-aos="fade-up">
+          <h3>Publishing</h3>
+          <ul>
+            <li>JavaScript class문법으로 연관 코드끼리의 그룹화</li>
+            <li>font</li>
+          </ul>
+        </div>
+        <div class="info_review info_box" data-aos="fade-up">
+          <h3>Review</h3>
+          <ul>
+            <li class="review1">
+              <h4>vaScr</h4>
+              <p>vaScr</p>
+            </li>
+            <li>
+              <h4>vaScr</h4>
+              <p>vaScr</p>
+            </li>
+            <li class="project_btn" data-aos="fade-up">
+              <ul>
+                <li class="btn_goHome">
+                  <a href="#"
+                    >프로젝트 바로가기<span class="material-symbols-outlined">
+                      arrow_right_alt
+                    </span></a
+                  >
+                </li>
+                <li class="btn_goSite">
+                  <a href="#"
+                    ><p>사이트 바로가기</p>
+                    <span class="material-symbols-outlined"> arrow_right_alt </span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-      <footer>
-        <ul>
-          <li>
-            <a href="/"> <span>Portfolio</span> Ma Hae Jeong </a>
-          </li>
-          <li>
-            <a href="akgowjd@gmail.com"> <span>Email</span> akgowjd@gmail.com </a>
-          </li>
-          <li>
-            <a href="#"> <span>Phone</span> 010.2713.4955 </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="/"> <span>Portfolio</span> Ma Hae Jeong </a>
+        </li>
+        <li>
+          <a href="akgowjd@gmail.com"> <span>Email</span> akgowjd@gmail.com </a>
+        </li>
+        <li>
+          <a href="#"> <span>Phone</span> 010.2713.4955 </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- scroll library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- index.js -->
+    <script src="./js/header.js"></script>
   </body>
 </html>

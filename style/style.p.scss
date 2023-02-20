@@ -28,6 +28,9 @@
       background: url(../common/images/goUp.png) no-repeat 50% / contain;
     }
   }
+  .top_btn {
+    bottom: 75px;
+  }
 }
 
 /********** menu - active **********/
@@ -55,7 +58,7 @@
 .main {
   padding: 0 15vw;
   .title {
-    margin: 100px 0 50px;
+    margin: 40px 0 30px;
     transition: 0.3s;
     li {
       display: flex;
@@ -79,7 +82,6 @@
     p {
       font-size: 17px;
       line-height: 1.6;
-      margin-top: 20px;
     }
   }
 }
@@ -95,13 +97,15 @@
     }
     h3 {
       font-size: 1.6em;
+      .br {
+        display: none;
+      }
     }
     p {
       width: 30vw;
     }
   }
   .keywords {
-    margin: 70px 10vw 0;
     .keywords_wrap {
       font-size: 3.5em;
       li {
@@ -143,12 +147,11 @@
         display: flex;
         align-items: flex-end;
         .swiper-wrapper {
-          height: 90%;
+          height: 80%;
           .swiper-slide {
             width: 50%;
             height: 100%;
-            padding-top: 0;
-            padding-right: 0;
+            padding: 0 100px;
             display: grid;
             align-items: center;
             grid-template-rows: repeat(5, 1fr);
@@ -159,6 +162,7 @@
               margin-left: 0;
             }
             .img_txt {
+              width: 100%;
               height: 100%;
               grid-row: 4/5;
               padding: 0;
@@ -171,11 +175,8 @@
                   margin: 5px;
                 }
               }
-              .ul_pc {
-                display: block;
-              }
               .ul_tab {
-                display: none;
+                display: block;
               }
               .ul_mobil {
                 display: none;
@@ -187,7 +188,13 @@
         .swiper-button-prev {
           color: rgba(0, 0, 0, 0.5);
           position: absolute;
-          top: 400px;
+          top: 420px;
+        }
+        .swiper-button-next {
+          right: 13vw;
+        }
+        .swiper-button-prev {
+          left: 13vw;
         }
       }
     }
@@ -196,29 +203,39 @@
 
 /********** skills **********/
 .skills {
-  h2 {
-  }
   ul {
     li {
       font-size: 2em;
     }
     .skill_box {
       .box_txt {
-        padding: 20px 0 20px 15vw;
+        padding: 40px 0 40px 15vw;
         margin: 0;
-        li {
-          // padding: ;
-        }
       }
-      &.on {
-        height: 108px;
-      }
+    }
+    .box1.on {
+      height: 160px;
+    }
+    .box2.on {
+      height: 155px;
+    }
+    .box3.on {
+      height: 155px;
+    }
+    .box4.on {
+      height: 100px;
+    }
+    .last_box {
+      height: 135px;
     }
   }
 }
 
 /********** contact **********/
 .contact {
+  .roll {
+    font-size: 9.5em;
+  }
   .contact_wrap {
     display: flex;
     flex-direction: row;
