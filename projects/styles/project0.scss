@@ -154,12 +154,12 @@ li {
     }
   }
   .contact_btn {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     position: fixed;
-    bottom: 5vw;
-    right: 5vw;
+    bottom: 4vw;
+    right: 4vw;
     transition: 0.4s;
     a {
       width: 100%;
@@ -553,6 +553,14 @@ li {
   }
 
   .project_info {
+    .info_codingConvention {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-bottom: 1px solid #ddd;
+      img {
+        height: 900px;
+      }
+    }
     .info_img {
       margin-top: 100px;
       margin-bottom: 100px;

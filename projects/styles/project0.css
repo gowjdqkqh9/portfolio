@@ -120,12 +120,12 @@ li {
   transition: 1s;
 }
 .header .contact_btn {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   position: fixed;
-  bottom: 5vw;
-  right: 5vw;
+  bottom: 4vw;
+  right: 4vw;
   transition: 0.4s;
 }
 .header .contact_btn a {
@@ -491,6 +491,14 @@ li {
   padding: 0;
   display: flex;
   align-items: center;
+}
+.project_container .project_info .info_codingConvention {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid #ddd;
+}
+.project_container .project_info .info_codingConvention img {
+  height: 900px;
 }
 .project_container .project_info .info_img {
   margin-top: 100px;
