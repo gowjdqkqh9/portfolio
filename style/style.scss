@@ -62,19 +62,19 @@ body {
         justify-content: space-between;
         padding: 0;
         transition: 0.3s;
-        .color_mode_btn {
-          min-width: 25px;
-          transition: 0.3s;
-          a {
-            width: 100%;
-            height: 100%;
-            background: url(../common/images/btn_colorMode.png) no-repeat 50% / contain;
-            display: block;
-          }
-        }
-        .color_mode_btn:hover {
-          transform: rotate(180deg);
-        }
+        // .color_mode_btn {
+        //   min-width: 25px;
+        //   transition: 0.3s;
+        //   a {
+        //     width: 100%;
+        //     height: 100%;
+        //     background: url(../common/images/btn_colorMode.png) no-repeat 50% / contain;
+        //     display: block;
+        //   }
+        // }
+        // .color_mode_btn:hover {
+        //   transform: rotate(180deg);
+        // }
         .menu_btn {
           width: 26px;
           transition: 0.3s;
@@ -273,7 +273,7 @@ body {
           span {
             width: 30px;
             height: 20px;
-            background: url(../common/images/notion.png) no-repeat 50% / contain;
+            background: url(../common/images/design.png) no-repeat 50% / contain;
             opacity: 0.4;
           }
         }
@@ -921,24 +921,29 @@ body {
         }
       }
     }
-    .notion {
+    .design {
       width: 100%;
       height: 100%;
       overflow: hidden;
       position: relative;
-      .notion_logo {
+      .design_logo {
         width: 100%;
         height: 100%;
-        background: url(../common/images/notion.png) no-repeat 50% / contain;
+        background: url(../common/images/design.png) no-repeat 50% / contain;
         transform: translateX(45%);
         opacity: 0;
         transition: 1s;
         position: absolute;
         right: 0;
       }
+      a {
+        p {
+          overflow: visible;
+        }
+      }
     }
-    .notion:hover {
-      .notion_logo {
+    .design:hover {
+      .design_logo {
         opacity: 0.05;
       }
       a {
@@ -989,13 +994,16 @@ body {
   footer {
     font-family: "Mulish";
     grid-row: 6/7;
+    margin: 0 auto;
     ul {
+      width: 70vw;
       display: flex;
       flex-direction: column;
       li {
         line-height: 2;
-        padding-left: 11vw;
+        // padding-left: 8vw;
         a {
+          cursor: default;
           font-size: 16px;
           color: rgba(0, 0, 0, 0.5);
           span {

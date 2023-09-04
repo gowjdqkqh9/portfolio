@@ -65,19 +65,6 @@ body {
   padding: 0;
   transition: 0.3s;
 }
-.header .header_container .gnb ul .color_mode_btn {
-  min-width: 25px;
-  transition: 0.3s;
-}
-.header .header_container .gnb ul .color_mode_btn a {
-  width: 100%;
-  height: 100%;
-  background: url(../common/images/btn_colorMode.png) no-repeat 50%/contain;
-  display: block;
-}
-.header .header_container .gnb ul .color_mode_btn:hover {
-  transform: rotate(180deg);
-}
 .header .header_container .gnb ul .menu_btn {
   width: 26px;
   transition: 0.3s;
@@ -129,7 +116,8 @@ body {
   height: 100%;
   background: url(../common/images/goUp.png) no-repeat 50%/contain;
   display: block;
-  animation: rotate_image 6s linear infinite;
+  -webkit-animation: rotate_image 6s linear infinite;
+          animation: rotate_image 6s linear infinite;
   transform-origin: 50% 50%;
 }
 .header .contact_btn:hover {
@@ -165,7 +153,8 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hue 3s infinite linear;
+  -webkit-animation: hue 3s infinite linear;
+          animation: hue 3s infinite linear;
 }
 
 /********** menu - active **********/
@@ -226,7 +215,8 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hue 3s infinite linear;
+  -webkit-animation: hue 3s infinite linear;
+          animation: hue 3s infinite linear;
 }
 .active .header .menu_gnb .main_menu {
   display: flex;
@@ -261,7 +251,7 @@ body {
 .active .header .menu_gnb .contact_menu .contact_notion span {
   width: 30px;
   height: 20px;
-  background: url(../common/images/notion.png) no-repeat 50%/contain;
+  background: url(../common/images/design.png) no-repeat 50%/contain;
   opacity: 0.4;
 }
 .active .header .menu_gnb .bg_border {
@@ -325,14 +315,16 @@ body {
 .main .title li .text::after {
   content: "";
   border-right: 2px solid #777;
-  animation: cursor 0.7s infinite steps(2);
+  -webkit-animation: cursor 0.7s infinite steps(2);
+          animation: cursor 0.7s infinite steps(2);
 }
 .main .sub_txt p {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   opacity: 0;
-  animation: subTxt 3s ease 0.5s forwards;
+  -webkit-animation: subTxt 3s ease 0.5s forwards;
+          animation: subTxt 3s ease 0.5s forwards;
   line-height: 1.6;
 }
 
@@ -366,7 +358,8 @@ body {
   height: 6px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
-  animation: mouse 1.7s infinite ease-in-out;
+  -webkit-animation: mouse 1.7s infinite ease-in-out;
+          animation: mouse 1.7s infinite ease-in-out;
 }
 
 /********** about **********/
@@ -443,20 +436,25 @@ body {
 }
 .about .keywords .keywords_wrap li ul li .bold {
   font-weight: 600;
-  animation: size 3s ease forwards;
+  -webkit-animation: size 3s ease forwards;
+          animation: size 3s ease forwards;
 }
 .about .keywords .keywords_wrap li ul li .up {
-  animation: up 1s ease forwards;
+  -webkit-animation: up 1s ease forwards;
+          animation: up 1s ease forwards;
 }
 .about .keywords .keywords_wrap li ul li .down {
   transform: translateY(-100px);
-  animation: down 1s ease forwards;
+  -webkit-animation: down 1s ease forwards;
+          animation: down 1s ease forwards;
 }
 .about .keywords .keywords_wrap li ul li .right {
-  animation: right 2s ease forwards;
+  -webkit-animation: right 2s ease forwards;
+          animation: right 2s ease forwards;
 }
 .about .keywords .keywords_wrap li ul li .left {
-  animation: left 2s ease forwards;
+  -webkit-animation: left 2s ease forwards;
+          animation: left 2s ease forwards;
 }
 
 /********** projects **********/
@@ -693,7 +691,8 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hue 3s infinite linear;
+  -webkit-animation: hue 3s infinite linear;
+          animation: hue 3s infinite linear;
 }
 .projects .img_wrap .img_swp .swiper .swiper-pagination {
   display: none;
@@ -773,7 +772,8 @@ body {
 .skills ul .skill_title:hover .title_txt .plus span {
   background-image: linear-gradient(92deg, #f35626, #feab3a);
   -webkit-text-fill-color: transparent;
-  animation: hue 3s infinite linear;
+  -webkit-animation: hue 3s infinite linear;
+          animation: hue 3s infinite linear;
 }
 .skills ul .skill_box {
   width: 100%;
@@ -835,7 +835,8 @@ body {
   overflow: hidden;
 }
 .contact .roll .roll_wrap {
-  animation: 30s linear 0s infinite normal forwards running rollingleft;
+  -webkit-animation: 30s linear 0s infinite normal forwards running rollingleft;
+          animation: 30s linear 0s infinite normal forwards running rollingleft;
 }
 .contact .roll p {
   width: 500vw;
@@ -881,26 +882,29 @@ body {
 .contact .contact_wrap .git:hover a .right {
   margin-left: 6vw;
 }
-.contact .contact_wrap .notion {
+.contact .contact_wrap .design {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-.contact .contact_wrap .notion .notion_logo {
+.contact .contact_wrap .design .design_logo {
   width: 100%;
   height: 100%;
-  background: url(../common/images/notion.png) no-repeat 50%/contain;
+  background: url(../common/images/design.png) no-repeat 50%/contain;
   transform: translateX(45%);
   opacity: 0;
   transition: 1s;
   position: absolute;
   right: 0;
 }
-.contact .contact_wrap .notion:hover .notion_logo {
+.contact .contact_wrap .design a p {
+  overflow: visible;
+}
+.contact .contact_wrap .design:hover .design_logo {
   opacity: 0.05;
 }
-.contact .contact_wrap .notion:hover a .right {
+.contact .contact_wrap .design:hover a .right {
   margin-left: 6vw;
 }
 .contact .contact_wrap a {
@@ -933,21 +937,24 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hue 3s infinite linear;
+  -webkit-animation: hue 3s infinite linear;
+          animation: hue 3s infinite linear;
 }
 .contact footer {
   font-family: "Mulish";
   grid-row: 6/7;
+  margin: 0 auto;
 }
 .contact footer ul {
+  width: 70vw;
   display: flex;
   flex-direction: column;
 }
 .contact footer ul li {
   line-height: 2;
-  padding-left: 11vw;
 }
 .contact footer ul li a {
+  cursor: default;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -957,4 +964,4 @@ body {
 }
 .contact footer ul li a:hover {
   color: #000;
-}
+}/*# sourceMappingURL=style.css.map */

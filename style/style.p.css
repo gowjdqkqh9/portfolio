@@ -11,7 +11,7 @@
 .header .contact_btn {
   width: 140px;
   height: 140px;
-  bottom: 3vw;
+  bottom: 4.5vw;
   right: 3vw;
 }
 .header .contact_btn a {
@@ -217,4 +217,4 @@
   flex-direction: row;
   justify-content: space-around;
   justify-content-padding-left: 0;
-}
+}/*# sourceMappingURL=style.p.css.map */
