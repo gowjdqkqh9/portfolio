@@ -6,25 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>프로젝트2 - WIFIDOSIRAK</title>
 
+    <!-- og -->
+    <meta property="og:title" content="마해정 포트폴리오" />
+    <meta property="og:description" content="변화의 시작이 될 프론트엔드 개발자 마해정입니다" />
+    <meta property="og:image" content="https://ezen-playd.github.io/playD/images/open/open.png" />
+    <meta property="og:url" content="https://ezen-playd.github.io/playD" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../common/images/logo_black.ico" type="image/x-icon" />
+    <link rel="icon" href="../common/images/logo_black.ico" type="image/x-icon" />
+
     <!-- reset -->
     <link rel="stylesheet" href="../common/style/reset.css" />
 
     <!-- scroll event -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <!-- animation -->
-    <link rel="stylesheet" href="../style/animation.css" />
-
+    
     <!-- icon -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0"
     />
 
+    <!-- font -->
+    <link rel="stylesheet" href="../common/style/font.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- animation -->
+    <link rel="stylesheet" href="../common/style/animation.css" />
     <!-- style -->
     <link rel="stylesheet" href="./styles/project2.css" />
-
-    <style></style>
   </head>
   <body>
     <!-- header -->
@@ -32,13 +44,13 @@
       <div class="header_container">
         <div class="gnb">
           <h1 class="logo">
-            <a href="./index.html"></a>
+            <a href="../index.html"></a>
           </h1>
           <h2 class="title">마해정 포트폴리오</h2>
           <ul>
-            <li class="color_mode_btn">
+            <!-- <li class="color_mode_btn">
               <a href="#"></a>
-            </li>
+            </li> -->
             <li class="menu_btn" id="toggle_btn">
               <a href="#">
                 <span class="bar1"></span>
@@ -53,10 +65,10 @@
       <div class="menu_gnb">
         <ul>
           <li class="main_menu">
-            <a href="#about" class="menu_a">About Me</a>
-            <a href="#projects" class="menu_a">Projects</a>
-            <a href="#skills" class="menu_a">Skills</a>
-            <a href="#contact" class="menu_a">Contact</a>
+            <a href="../index.html#about" class="menu_a">About Me</a>
+            <a href="../index.html#projects" class="menu_a">Projects</a>
+            <a href="../index.html#skills" class="menu_a">Skills</a>
+            <a href="../index.html#contact" class="menu_a">Contact</a>
           </li>
           <li class="contact_menu">
             <div class="contact_git">
@@ -64,7 +76,7 @@
               <span></span>
             </div>
             <div class="contact_notion">
-              <a href="#" class="contact_notion">Notion</a> <span></span>
+              <a href="https://drive.google.com/file/d/1RJk1J57DysOD24tL_zob6-vWn-aZxZTz/view" class="contact_notion" target="_blank">Design</a> <span></span>
             </div>
           </li>
         </ul>
@@ -81,8 +93,12 @@
         </div>
       </div>
 
-      <aside class="contact_btn">
-        <a href="#contact"></a>
+      <aside id="con_btn">
+        <a href="../index.html#contact"></a>
+      </aside>
+
+      <aside class="upBtn">
+        <a href="#"><span class="material-symbols-outlined"> expand_less </span>Back To Top</a>
       </aside>
     </header>
 
@@ -97,6 +113,12 @@
           <li># GIT / GitHub</li>
         </ul>
       </div>
+      <div class="scroll_down">
+        <span class="scroll_mouse">
+          <span class="scroll_ball"></span>
+        </span>
+        <p>scroll</p>
+      </div>
     </article>
 
     <main class="project_container">
@@ -104,31 +126,29 @@
         <div class="overview_title">
           <h3 data-aos="fade-up">Overview</h3>
           <p class="bold" data-aos="fade-up">
-            놀이 별과 눈이 위하여서, 넣는 있는가? 구할 천지는 속에 아니더면,<br />
-            오직 장식하는 위하여 기쁘며, 하는 인생을 아름다우냐?
+            Git/GitHub 를 활용한 팀프로젝트: 와이파이도시락,<br />
+            소통과 협업을 배우다!
           </p>
           <p data-aos="fade-up">
-            위하여서. 피고 그들의 그들은 없는 원질이<br />
-            인도하겠다는 우리의 우는 사라지지 부패뿐이다.<br />
-            오직 장식하는 위하여 기쁘며.
+            문제에 부딪혔을 때, 방안을 함께 고민해 보며<br />
+            Git/GitHub를 통해 팀원과의 협업을 진행해볼 수 있는 좋은 경험이었습니다.
           </p>
         </div>
         <div class="overview_list" data-aos="fade-up">
           <ul>
             <li>
               <h4>프로젝트</h4>
-              <p>팀 작업</p>
+              <p>WIFIDOSIRAK</p>
             </li>
-            <li class="short_bar"></li>
-            <li>
-              <h4>사이트</h4>
-              <p>도시락통/p></p>
-            </li>
-
             <li class="short_bar"></li>
             <li>
               <h4>스킬</h4>
               <p>HTML / SCSS / GIT</p>
+            </li>
+            <li class="short_bar"></li>
+            <li>
+              <h4>기여도</h4>
+              <p>팀 프로젝트</p>
             </li>
             <li class="short_bar"></li>
             <li>
@@ -140,63 +160,159 @@
       </section>
 
       <section class="project_info">
+        <div class="info_team">
+          <div class="info_team_target team info_box" data-aos="fade-up">
+            <h3>목표</h3>
+            <ul>
+              <li>정해진 시간 안에 마감</li>
+              <li>팀원 간의 원활한 소통</li>
+              <li>github의 organization을 이용한 협업</li>
+              <li>그동안 배운 기술을 사용해 스킬업</li>
+            </ul>
+          </div>
+
+          <div class="info_team_role team info_box" data-aos="fade-up">
+            <h3>담당 업무</h3>
+            <ul>
+              <li>header + footer</li>
+              <li>서브페이지2 ( 제휴문의 )</li>
+            </ul>
+          </div>
+
+          <div class="info_team_progress team info_box" data-aos="fade-up">
+            <h3>진행 과정</h3>
+            <div class="progress progress1">
+              <h4><span>1. 작업 세분화</span></h4>
+              <ul>
+                <li># 메인페이지</li>
+                <li># 서브페이지1 ( ABOUT US )</li>
+                <li># 서브페이지2 ( 제휴문의 + 헤더 + 푸터 )</li>
+                <li># 서브페이지3 ( 도시락멤버스 )</li>
+              </ul>
+              <p>
+                팀프로젝트를 처음으로 작업하게 되어 소통 방법을 찾는 것 부터 시작해서 각자 작업한 작업물을 하나로 합치는 방법 등 팀으로 작업하는 법에 대해 직접 부딪혀 가며 배울 수 있었습니다.
+              </p>
+            </div>
+            <div class="progress progress2">
+              <h4><span>2. 공유 및 취합</span></h4>
+              <p>
+                동일하게 적용되는 부분들은 공유해서 사용하고 각자 작업한 작업물을 하나로 취합
+              </p>
+            </div>
+            <div class="progress progress3">
+              <h4><span>3. github에 푸쉬</span></h4>
+              <p>
+                하나로 합쳐진 작업물을 github에 푸쉬해 배포
+              </p>
+            </div>
+          </div>
+
+          <div class="info_team_result team info_box" data-aos="fade-up">
+            <h3>문제 & 해결</h3>
+            <ul>
+              <li class="result1 result">
+                <h4>header</h4>
+                <p>
+                  메뉴에 마우스를 올렸을 때 밑줄이 왼쪽에서부터 천천히 길게 등장해야 했는데 transition으로도 원하는 움직임이 나오지 않아 ::after 로 left 값을 0에서 20으로 자연스럽게 움직이도록 했습니다.
+                </p>
+              </li>
+              <li class="result2 result">
+                <h4>작업물 취합 과정</h4>
+                <p>
+                  각자 작업한 작업물들을 하나로 취합하는데 각자 사용한 태그나 클래스명, 아이디명이 달라서 생각했던 것과 다르게 한번에 완성되지 않았고 작업된 작업물을 해치지 않으면서 합치는 방법에 대해 팀원과 의논했습니다. 
+                </p>
+                <p>각 작업물을 크게 감싸는 태그를 만들고 헷갈리지 않도록 클래스명을 통일시켜 문제를 해결했습니다.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div class="info_img" data-aos="fade-up">
           <img src="../common/images/webD2.jpg" alt="도시락통" />
         </div>
+
         <div class="info_keywords info_box" data-aos="fade-up">
           <h3>Keywords</h3>
           <ul>
             <li># SCSS</li>
             <li># Navigation Bar</li>
-            <li># GitHub 협업</li>
+            <li># GitHub</li>
           </ul>
         </div>
         <div class="info_design info_box" data-aos="fade-up">
           <h3>Design</h3>
           <ul>
-            <li class="info_design_color"></li>
+            <li class="info_design_color">
+              <span class="color1"></span>
+              <span class="color2"></span>
+              <span class="color3"></span>
+              <span class="color4"></span>
+            </li>
             <li class="info_design_font">
-              <h5>폰트</h5>
-              <ul>
-                <li>가나다라마바사아자차카타파하</li>
-                <li>ABCDEFGHIJKLNMOPQRSTUVWXYZ</li>
-                <li>abcdefghijklnmopqrstuvwxyz</li>
-                <li>0123456789</li>
-              </ul>
+              <div class="font godo">
+                <h4>Godo</h4>
+                <ul>
+                  <li>가나다라마바사아자차카타파하</li>
+                  <li>ABCDEFGHIJKLNMOPQRSTUVWXYZ</li>
+                  <li>abcdefghijklnmopqrstuvwxyz</li>
+                  <li>0123456789</li>
+                </ul>
+              </div>
+              <div class="font poppins">
+                <h4>Poppins</h4>
+                <ul>
+                  <li>가나다라마바사아자차카타파하</li>
+                  <li>ABCDEFGHIJKLNMOPQRSTUVWXYZ</li>
+                  <li>abcdefghijklnmopqrstuvwxyz</li>
+                  <li>0123456789</li>
+                </ul>
+              </div>
+              <div class="font pretendard">
+                <h4>Pretendard</h4>
+                <ul>
+                  <li>가나다라마바사아자차카타파하</li>
+                  <li>ABCDEFGHIJKLNMOPQRSTUVWXYZ</li>
+                  <li>abcdefghijklnmopqrstuvwxyz</li>
+                  <li>0123456789</li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
         <div class="info_pub info_box" data-aos="fade-up">
           <h3>Publishing</h3>
           <ul>
-            <li>JavaScript class문법으로 연관 코드끼리의 그룹화</li>
-            <li>font</li>
+            <li>JavaScript를 이용한 움직임 구현</li>
+            <li>flex와 grid를 이용한 웹페이지 레이아웃 제작/제어</li>
+            <li>git & github를 이용한 협업</li>
           </ul>
         </div>
         <div class="info_review info_box" data-aos="fade-up">
           <h3>Review</h3>
           <ul>
-            <li class="review1">
-              <h4>vaScr</h4>
-              <p>vaScr</p>
+            <li class="review">
+              <h4>form을 이용한 제휴문의 양식 만들기</h4>
+              <p>
+                input 태그의 autocomplete, placeholder 나 select 태그의 option 등 그 동안 배웠던 여러가지 속성을 활용해 실제처럼 양식을 만들어 볼 수 있어 좋았습니다.
+              </p>
             </li>
-            <li>
-              <h4>vaScr</h4>
-              <p>vaScr</p>
+            <li class="review">
+              <h4>작업물 취합 과정</h4>
+              <p>
+                처음 팀프로젝트를 작업해보게 되었는데 혼자서 작업할 때와는 다른 문제가 발생할 수 있고 '소통' 능력이 중요하다는 것을 알 수 있었습니다.
+              </p>
+              <p>
+                수업 시간 끝나고도 남아서 함께 모여 의논하거나 집에 돌아가서도 서로 연락하며 의논하는 과정을 통해 문제를 해결하고 협업과 소통에 대해서 많이 배울 수 있었습니다.
+              </p>
             </li>
             <li class="project_btn" data-aos="fade-up">
               <ul>
                 <li class="btn_goHome">
-                  <a href="#"
-                    >프로젝트 바로가기<span class="material-symbols-outlined">
-                      arrow_right_alt
-                    </span></a
-                  >
+                  <a href="../index.html#projects">프로젝트 <br class="br" />바로가기</a>
                 </li>
                 <li class="btn_goSite">
-                  <a href="#"
-                    ><p>사이트 바로가기</p>
-                    <span class="material-symbols-outlined"> arrow_right_alt </span></a
+                  <a href="https://gowjdqkqh9.github.io/untitleF4-project/index.html" target="_blank"
+                    >사이트 <br class="br" />바로가기</a
                   >
                 </li>
               </ul>
@@ -209,7 +325,7 @@
     <footer>
       <ul>
         <li>
-          <a href="/"> <span>Portfolio</span> Ma Hae Jeong </a>
+          <a href="../index.html"> <span>Portfolio</span> Ma Hae Jeong </a>
         </li>
         <li>
           <a href="akgowjd@gmail.com"> <span>Email</span> akgowjd@gmail.com </a>
@@ -230,3 +346,13 @@
     <script src="./js/header.js"></script>
   </body>
 </html>
+
+<!-- 
+click.on {}
+click.on .col  {height:0;}
+click.on + .skill_box {ghghg }
+
+click {}
+click .col  {height:0;}
+click.on + .skill_box {ghghg } 
+-->
