@@ -1,4 +1,5 @@
 @charset "utf-8";
+// @import url(../../common/style/font.css);
 
 html {
   scroll-behavior: smooth;
@@ -22,11 +23,11 @@ body {
 h3 {
   font-family: "Mulish";
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 800;
 }
 h4 {
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 700;
 }
 li {
   line-height: 1.6;
@@ -154,8 +155,8 @@ li {
     }
   }
   .contact_btn {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     position: fixed;
     bottom: 4vw;
@@ -316,7 +317,7 @@ li {
           span {
             width: 30px;
             height: 20px;
-            background: url(../../common/images/notion.png) no-repeat 50% / contain;
+            background: url(../../common/images/design.png) no-repeat 50% / contain;
             opacity: 0.4;
           }
         }
@@ -553,14 +554,14 @@ li {
   }
 
   .project_info {
-    .info_codingConvention {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      border-bottom: 1px solid #ddd;
-      img {
-        height: 900px;
-      }
-    }
+    // .info_codingConvention {
+    //   display: grid;
+    //   grid-template-columns: repeat(2, 1fr);
+    //   border-bottom: 1px solid #ddd;
+    //   img {
+    //     height: 900px;
+    //   }
+    // }
     .info_img {
       margin-top: 100px;
       margin-bottom: 100px;
@@ -630,13 +631,31 @@ li {
         }
         .Mulish {
           font-family: "Mulish";
+          font-weight: 600;
           margin-bottom: 50px;
+          ul {
+            li {
+              font-family: "Mulish";
+              font-weight: 500;
+            }
+          }
         }
         .NanumSquare {
           font-family: "NanumSquare";
+          font-weight: 600;
           ul {
             li {
               font-family: "NanumSquare";
+              font-weight: 500;
+            }
+          }
+        }
+        .Inter {
+          font-family: "Inter";
+          font-weight: 600;
+          ul {
+            li {
+              font-family: "Inter";
               font-weight: 500;
             }
           }
@@ -706,12 +725,15 @@ footer {
   border-top: 1px solid #ddd;
   padding: 50px 0;
   ul {
+    width: 70vw;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     li {
       a {
         color: rgba(0, 0, 0, 0.5);
         display: block;
+        cursor: default;
         span {
           font-weight: 600;
         }

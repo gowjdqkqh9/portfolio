@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url(../styles/playD_Fonts.css);
+@import url(../../common/style/font.css);
 
 html {
   scroll-behavior: smooth;
@@ -22,11 +24,11 @@ body {
 h3 {
   font-family: "Mulish";
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 800;
 }
 h4 {
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 700;
 }
 li {
   line-height: 1.6;
@@ -154,8 +156,8 @@ li {
     }
   }
   .contact_btn {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     position: fixed;
     bottom: 4vw;
@@ -316,7 +318,7 @@ li {
           span {
             width: 30px;
             height: 20px;
-            background: url(../../common/images/notion.png) no-repeat 50% / contain;
+            background: url(../../common/images/design.png) no-repeat 50% / contain;
             opacity: 0.4;
           }
         }
@@ -625,16 +627,23 @@ li {
           grid-template-columns: 1fr 2fr;
         }
         .notoSans {
-          font-family: "NotoSans-Regular";
+          font-family: "Noto Sans";
+          font-weight: 600;
           margin-bottom: 50px;
           ul {
             li {
-              font-family: "NotoSans-Regular";
+              font-family: "Noto Sans";
+              font-weight: 500;
             }
           }
         }
         .basicSans {
           font-family: "Basic-Sans-Regular";
+          ul {
+            li {
+              font-family: 'Basic-Sans-Regular';
+            }
+          }
         }
       }
     }
@@ -701,12 +710,15 @@ footer {
   border-top: 1px solid #ddd;
   padding: 50px 0;
   ul {
+    width: 70vw;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     li {
       a {
         color: rgba(0, 0, 0, 0.5);
         display: block;
+        cursor: default;
         span {
           font-weight: 600;
         }

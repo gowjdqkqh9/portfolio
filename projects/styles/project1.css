@@ -1,3 +1,5 @@
+@import url(../styles/playD_Fonts.css);
+@import url(../../common/style/font.css);
 html {
   scroll-behavior: smooth;
 }
@@ -23,12 +25,12 @@ body {
 h3 {
   font-family: "Mulish";
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h4 {
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 li {
@@ -120,8 +122,8 @@ li {
   transition: 1s;
 }
 .header .contact_btn {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   position: fixed;
   bottom: 4vw;
@@ -133,7 +135,8 @@ li {
   height: 100%;
   background: url(../../common/images/goUp.png) no-repeat 50%/contain;
   display: block;
-  animation: rotate_image 6s linear infinite;
+  -webkit-animation: rotate_image 6s linear infinite;
+          animation: rotate_image 6s linear infinite;
   transform-origin: 50% 50%;
 }
 .header .contact_btn:hover {
@@ -169,7 +172,8 @@ li {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hue 3s infinite linear;
+  -webkit-animation: hue 3s infinite linear;
+          animation: hue 3s infinite linear;
 }
 
 /********** menu - active **********/
@@ -234,7 +238,8 @@ li {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hue 3s infinite linear;
+  -webkit-animation: hue 3s infinite linear;
+          animation: hue 3s infinite linear;
 }
 .active .header .menu_gnb .main_menu {
   font-weight: 800;
@@ -269,7 +274,7 @@ li {
 .active .header .menu_gnb .contact_menu .contact_notion span {
   width: 30px;
   height: 20px;
-  background: url(../../common/images/notion.png) no-repeat 50%/contain;
+  background: url(../../common/images/design.png) no-repeat 50%/contain;
   opacity: 0.4;
 }
 .active .header .menu_gnb .bg_border {
@@ -369,7 +374,8 @@ li {
   height: 6px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.7333333333);
-  animation: mouse 1.7s infinite ease-in-out;
+  -webkit-animation: mouse 1.7s infinite ease-in-out;
+          animation: mouse 1.7s infinite ease-in-out;
 }
 
 /********** main **********/
@@ -551,13 +557,18 @@ li {
   grid-template-columns: 1fr 2fr;
 }
 .project_container .project_info .info_design .info_design_font .notoSans {
-  font-family: "NotoSans-Regular";
+  font-family: "Noto Sans";
+  font-weight: 600;
   margin-bottom: 50px;
 }
 .project_container .project_info .info_design .info_design_font .notoSans ul li {
-  font-family: "NotoSans-Regular";
+  font-family: "Noto Sans";
+  font-weight: 500;
 }
 .project_container .project_info .info_design .info_design_font .basicSans {
+  font-family: "Basic-Sans-Regular";
+}
+.project_container .project_info .info_design .info_design_font .basicSans ul li {
   font-family: "Basic-Sans-Regular";
 }
 .project_container .project_info .info_pub ul li {
@@ -614,12 +625,15 @@ footer {
   padding: 50px 0;
 }
 footer ul {
+  width: 70vw;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
 footer ul li a {
   color: rgba(0, 0, 0, 0.5);
   display: block;
+  cursor: default;
 }
 footer ul li a span {
   font-weight: 600;
@@ -640,4 +654,4 @@ footer .back_btn span {
   .br {
     display: block;
   }
-}
+}/*# sourceMappingURL=project1.css.map */
